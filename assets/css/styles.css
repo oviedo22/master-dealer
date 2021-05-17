@@ -1,0 +1,287 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*RESET para REMS- 62.5% = 10 px de 16px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1 {
+    font-family: 'Public Sans', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+
+/*Utilidades*/
+
+.contenedor {
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+/*Secciones*/
+
+
+/*Header*/
+
+header {
+    text-align: center;
+}
+
+header div.logo {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    header div.logo {
+        height: 10vh;
+    }
+}
+
+@media (min-width: 992px) {
+    header div.logo {
+        height: 15vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    header div.logo {
+        height: 10vh;
+    }
+}
+
+@media (min-width: 1100px) {
+    header div.logo {
+        height: 15vh;
+    }
+}
+
+header div.logo img {
+    width: 45%;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    header div.logo img {
+        width: 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    header div.logo img {
+        width: 35%;
+    }
+}
+
+@media (min-width: 992px) {
+    header div.logo img {
+        width: 30%;
+    }
+}
+
+header div.banner {
+    background-image: url(../img/banner-2.jpg);
+    background-image: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 85vh;
+}
+
+div.banner {
+    display: flex;
+    align-items: center;
+}
+
+div.banner h1 {
+    letter-spacing: .6rem;
+    flex: 1;
+    margin: auto auto;
+    background-color: rgba(0, 0, 1, 0.644);
+    color: #FCB306;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    div.banner h1 {
+        font-size: 4rem;
+    }
+}
+
+
+/**/
+
+main {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-top: 10rem !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+main div.contacto {
+    flex: 1 1 50%;
+}
+
+@media (min-width: 768px) {
+    main div.contacto {
+        text-align: left;
+        margin-right: 2rem;
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 900px) {
+    main div.contacto {
+        text-align: left;
+        margin-right: 2rem;
+        padding: 0 15rem;
+    }
+}
+
+main div.contacto h2 {
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    main div.contacto h2 {
+        margin-top: 0;
+    }
+}
+
+main form div.campo {
+    margin-bottom: 2rem;
+}
+
+main form {
+    flex: 1 1 30%;
+}
+
+@media (min-width: 768px) {
+    main form {
+        text-align: left;
+    }
+}
+
+div.campo input {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: .1px solid #bebcbc;
+    background-color: #f6f7fb;
+    transition: .8s;
+}
+
+@media (min-width: 768px) {
+    div.campo input {
+        padding: 1rem 4rem;
+    }
+}
+
+div.campo input:hover {
+    box-shadow: 0px 0px 7px #5f9ea0;
+}
+
+div.campo input:focus {
+    box-shadow: 0px 0px 7px #5f9ea0;
+    outline: none;
+}
+
+div.campo input:not(:placeholder-shown):invalid {
+    box-shadow: 0px 0px 5px #f5414f;
+}
+
+div.boton button {
+    margin-bottom: 2rem;
+    padding: 1.5rem 3.5rem;
+    background-color: #040404;
+    border: none;
+    border-radius: .3rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    transition: .4s;
+}
+
+div.boton button:hover {
+    color: #F4B30C;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    div.boton {
+        text-align: left;
+    }
+}
+
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    margin-top: 3rem !important;
+    background-color: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+    footer div.contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    span {
+        background-color: #0404049f;
+        margin: 5rem 3rem;
+        width: .1rem;
+        height: 20rem;
+    }
+}
+
+div.info {
+    flex: 1 1 33%;
+    border-bottom: 1px solid #04040496;
+}
+
+@media (min-width: 768px) {
+    div.info {
+        border-bottom: none;
+    }
+    div.info:first-of-type p {
+        margin: 0 0 1rem 0;
+    }
+}
+
+div.contenido div.info h2 {
+    margin-top: 2rem;
+}
